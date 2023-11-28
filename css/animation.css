@@ -1,0 +1,93 @@
+/* Header Links Animations */
+ul#links a:hover {
+  color: var(--primary);
+}
+
+ul#links a::after {
+  content: '';
+  background: var(--text);
+  display: block;
+  width: 0%;
+  height: 4px;
+  transition: ease-in 500ms;
+  left: 0;
+  right: 0;
+}
+
+ul#links a:hover::after {
+  width: 100%;
+}
+
+#social-media li a img:hover {
+  transform: scale(1.5);
+  transition: 700ms;
+}
+
+/* Hover Content "Formação" */
+li.education-item div h3 a:hover {
+  color: var(--primary);
+}
+
+ul#education-list li.education-item a img:hover {
+  transform: scale(1.3);
+  transition: 700ms;
+}
+
+/* Animations for "Meus Conhecimentos" Cards */
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+
+  85% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+[animate] {
+  float: left;
+  margin: 5px;
+  animation: FadeIn 1s linear;
+  animation-fill-mode: both;
+}
+
+[animate]:nth-child(1) {
+  animation-delay: 500ms;
+}
+
+[animate]:nth-child(2) {
+  animation-delay: 1s;
+}
+
+[animate]:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+[animate]:nth-child(4) {
+  animation-delay: 2s;
+}
+
+[animate]:nth-child(5) {
+  animation-delay: 2.5s;
+}
+
+[animate]:nth-child(6) {
+  animation-delay: 3s;
+}
+
+/* Hover on Titles in "Meus Projetos" Content */
+div#projects-content article.project div.project-info a h3:hover {
+  color: var(--primary);
+}
+
+/* Footer Animations */
+div#footer-content nav#footer-nav div.footer-links:hover {
+  transform: scale(1.3);
+  transition: 700ms;
+}

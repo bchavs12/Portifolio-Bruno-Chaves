@@ -1,0 +1,39 @@
+@media screen and (max-width: 1024px) {
+
+  /* Header */
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Main - Início */
+  main section#home h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  /* Main - Formação */
+  div#education-content li.education-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div#education-content li.education-item img {
+    margin-left: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  /* Main - Publicações */
+  section#projects div#projects-content article.project {
+    height: auto;
+  }
+
+  /* Main - Início */
+  section#home h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
